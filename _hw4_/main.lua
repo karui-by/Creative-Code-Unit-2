@@ -13,7 +13,7 @@ function draw()
     quad(0,350,300,430,300,500,0,500)
 
 ----------  
---dark red
+--dark red_
 ----------
   fill(78,13,18)
  --quad(x1,y1|x2,y2|x3,y3|x4,y4)
