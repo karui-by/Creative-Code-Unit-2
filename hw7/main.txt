@@ -1,0 +1,51 @@
+require("L5")
+background(255,255,255,200)
+
+--demo
+function mousepressed()
+ for i = 1, 10, 1 do
+    fill(random(100), random(100,255), random(100,255))
+    ellipse(random(100,500),random(100,300),50,50)
+ end
+end
+
+function draw()
+   fill(i*25,100,100)
+   ellipse(150, 60+i*30,20,20)
+end
+
+
+function draw()
+background(250)
+fill(200,200,200)
+
+
+ dont do this
+
+
+rotate (45)
+rect(100,100,100,100)
+ 
+ do this
+
+
+fill(200,200,200)
+push
+translate(100,100)
+rotate(45)
+rec(0,0,100,100)
+pop()
+
+
+------------------------------------------------------
+
+if mouseX and mouseY <= x and y then
+        
+    
+        for i = 30, 400, 80 do
+            for j = 30, 400, 80 do
+                fill(random(255),random(255),random(255))  
+                rect(i,j, 30, 30)    
+            end
+        end
+    end
