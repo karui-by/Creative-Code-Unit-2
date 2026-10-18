@@ -1,0 +1,4 @@
+-- circle(mouseX, mouseY,20)
+    local coordinatesText = "X: " .. mouseX .. "__ Y: ".. mouseY
+    text(coordinatesText, 15, 15)
+end
