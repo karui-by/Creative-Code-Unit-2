@@ -12,13 +12,15 @@ end
 function textGenerator()
 background(0)
 entree = {"Cheesebuger", "Hamburger", "10 count nuggets"}
-Sides = {"Fries","a cookie"," "}
-drink = {"and a fountain drink"," and thats it."}
+Sides = {"Fries","a cookie","Nuggets"}
+drink = {"and a Sprite", "and a Coke","and a Fanta"}
+ice = {"with ice", "No Ice"}
 x = random(Sides)
 text("customer:", ctextx, ctexty)
 text("Can I have ".. random(entree).." please?",ctextx,ctexty+40)
 text(x,ctextx,ctexty+80)
 text(random(drink), ctextx,ctexty+120)
+text(random(ice), ctextx+80,ctexty+120)
 text("you:",ctextx+70,ctexty+160 )
 text("anything else?",ctextx+70,ctexty+200)
 text("customer:", ctextx, ctexty+240)
