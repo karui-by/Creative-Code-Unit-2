@@ -4,6 +4,7 @@ require("L5")
     eyecolor = 250
     iriscolor = 3
     lidcolor = 130
+    lidcolor2 = 90
     --eyelocation
     eye1 = 300
     eye1y = 310
@@ -11,7 +12,8 @@ require("L5")
     eye2y = 320
     eye3 = 400
     eye3y = 500
-
+x= 663
+y= 716
 --bubbles
     --range
     --b1 =
@@ -31,9 +33,11 @@ function draw()
         --fill(68,250,255)
         
     fill(lidcolor)
-    rect(0,0,width,50)
-    rect(0,750,width,50)
-    
+    rect(0,50,width,50)
+    rect(0,700,width,50)
+    fill(lidcolor2)
+    rect(100,0,600,50)
+    rect(100,750,600,50)
     --eyes
     fill(eyecolor)
     ellipse(eye1,eye1y,200,200)
@@ -47,7 +51,11 @@ function draw()
 
     --bubbles
     fill(68,250,255,190)
-    ellipse(663,663,50,50)
+    y=y+20
+    ellipse(x,y,50,50)
+    if y > 78 then
+        y = 700
+    end
 
     fill(0)
     local coordinatesText = "X: " .. mouseX .. "__ Y: ".. mouseY
